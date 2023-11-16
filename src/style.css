@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: sans-serif;
+    
+}
+.header{
+    height: 1.5cm;
+    display: flex;
+    width: 100%;
+    background-color: rgb(223, 246, 255);
+    box-shadow: 1px 1px 5px rgb(209, 209, 245);
+    text-align: center;
+
+}
+.form{
+    width:  70%;
+    
+}
+.search{
+    width: max(4cm,60%);
+    height: 1cm;
+    border: none;
+    margin-top: 0.2cm;
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    padding-left: 0.5cm;
+    font-size: 18px;
+    
+}
+.submit{
+    width: 2cm;
+    height: 1cm;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(79, 79, 235);
+    color: white;
+    margin-left: 0.2cm;
+}
+
+.name{
+    margin:0.5cm;
+    margin-right: 5%;
+    font-size: 18px;
+    color: rgb(67, 67, 235);
+}
+.content{
+    width: 100%;
+    height: 20cm;
+}
+.contentImg{
+    width: 100%;
+    height: 20cm;
+}
+.blur{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    
+    width: 100%;
+    justify-content: center;
+    top: 1.5cm;
+    padding-top: 4cm;
+    height: 16cm;   
+    
+}
+.cityName{
+    width:  8cm ;
+    height: 1.2cm;
+    margin: 1cm 10%;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-top: 0.2cm;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.219);
+}
+.temp2{
+    display: flex;
+   
+}
+.tempNum{
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.6cm;
+    
+    
+}
+.tempImgDiv{
+   
+    width: 50%;
+    padding-left: 0.3cm;
+    
+}
+.tempImg{
+    width: 2.5cm;
+    height: 2.5cm;
+    margin: 0.4cm 0.5cm;
+
+}
+.cloudy{
+    width: 50%;
+    padding-right: 0.2cm;
+    padding-top:1cm ;
+}
+
+.temperatureDiv{
+    width:  8cm ;
+    height: 6.6cm;
+    margin: 0 10%;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+
+.leftDiv{
+    height: 11cm;
+    width:   10cm;
+    margin-bottom: 2cm;
+}
+
+.rightDiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: max(13cm,30%);
+    height: 9cm;
+    color: white;
+    border-radius: 5px;
+    margin: 1cm;
+    background-color: rgba(255, 255, 255, 0.219);
+    
+}
+.rightDiv div{
+   
+    box-shadow: 0px 0px 1px white;
+    text-align: center;
+}
+.rightDiv img{
+    width: 1.5cm;
+    height: 1.5cm;
+    margin: 0.2cm 31%;
+}
+.rightDiv div div{
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.humivalue,.windvalue,.pressurevalue,.mintempvalue ,.maxtempvalue,.countryvalue{
+    font-size: 150%;
+    margin: 0.2cm;
+}
+.huminame,.windname,.pressurename,.mintempname ,.maxtempname,.countryname{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:363px){
+
+    .search{
+        font-size: 15px;
+        padding-left: 0.1cm;
+    }
+    .form{
+        margin-left: 1%;
+    }
+    .submit{
+        
+        width: 1.5cm;
+    }
+    
+}
+@media (max-width:945px){
+    .content,.contentImg{
+        height: 27cm;
+    }
+    .blur{
+        height: 24cm;
+        padding-top: 2.5cm;
+        
+    }
+    .rightDiv{
+        margin-top: 0;
+    }
+}

@@ -157,6 +157,7 @@ export function content(){
     humidity.classList.add("humidity")
     rightDiv.appendChild(humidity)
 
+
     let humiImg = document.createElement("img")
     humiImg.classList.add("humiImg")
     humiImg.src="https://cdn-icons-png.flaticon.com/512/3262/3262966.png"
